@@ -23,6 +23,7 @@ public class BeautyFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_suits,container,false);
+
         return  root;
     }
 

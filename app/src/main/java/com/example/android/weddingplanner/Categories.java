@@ -16,4 +16,13 @@ public class Categories extends AppCompatActivity {
     public void openHalls(View view) {
         startActivity(new Intent(this,Services.class));
     }
+    public void openSuits(View view) {
+        startActivity(new Intent(this,Services.class));
+    }
+    public void openPhotographer(View view) {
+        startActivity(new Intent(this,Services.class));
+    }
+
+
+
 }
