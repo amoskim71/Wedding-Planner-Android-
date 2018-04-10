@@ -17,7 +17,6 @@ import java.util.ArrayList;
  */
 public class HallsFragment extends Fragment {
 
-
     public HallsFragment() {
         // Required empty public constructor
     }
@@ -38,22 +37,12 @@ public class HallsFragment extends Fragment {
         items.add(new Items (R.drawable.h7,"Shape of love", "70,000"));
         items.add(new Items (R.drawable.h8,"White Rose outdoor", "65,000"));
         items.add(new Items (R.drawable.h9,"S N G ", "100,000"));
-        items.add(new Items (R.drawable.h11,"Red Rose","40,000 EGP"));
+        items.add(new Items (R.drawable.h10,"Red Rose","40,000 EGP"));
 
         ItemsAdapter Adapter = new ItemsAdapter(getActivity(),R.layout.list_item , items);
 
         GridView HallsView = (GridView) root.findViewById(R.id.GridHalls);
         HallsView.setAdapter(Adapter);
-
-
-
-
-
-
-
-
-
-
 
 
         return  root;
