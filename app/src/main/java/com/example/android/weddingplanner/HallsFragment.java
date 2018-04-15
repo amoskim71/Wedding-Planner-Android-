@@ -28,16 +28,17 @@ public class HallsFragment extends Fragment {
         View root = inflater.inflate(R.layout.halls,container,false);
 
         ArrayList<Items> items = new ArrayList<>();
-        items.add(new Items (R.drawable.h1,"Royal","50,000 EGP"));
-        items.add(new Items (R.drawable.h2,"Gold","45,000 EGP"));
-        items.add(new Items (R.drawable.h3,"Dream","45,000 EGP"));
-        items.add(new Items (R.drawable.h4,"Flowery outdoor","60,000"));
-        items.add(new Items (R.drawable.h5,"Whity outdoor", "65,000"));
-        items.add(new Items (R.drawable.h6,"Queen", "40,000"));
-        items.add(new Items (R.drawable.h7,"Shape of love", "70,000"));
-        items.add(new Items (R.drawable.h8,"White Rose outdoor", "65,000"));
-        items.add(new Items (R.drawable.h9,"S N G ", "100,000"));
-        items.add(new Items (R.drawable.h10,"Red Rose","40,000 EGP"));
+        items.add(new Items (R.mipmap.h1,"Royal","50,000 EGP"));
+        items.add(new Items (R.mipmap.h2,"Gold","45,000 EGP"));
+        items.add(new Items (R.mipmap.h3,"Dream","45,000 EGP"));
+        items.add(new Items (R.mipmap.h4,"Flowery outdoor","60,000"));
+        items.add(new Items (R.mipmap.h5,"Whity outdoor", "65,000"));
+        items.add(new Items (R.mipmap.h6,"Queen", "40,000"));
+        items.add(new Items (R.mipmap.h7,"Shape of love", "70,000"));
+        items.add(new Items (R.mipmap.h8,"White Rose outdoor", "65,000"));
+        items.add(new Items (R.mipmap.h9,"S N G ", "100,000"));
+        items.add(new Items (R.mipmap.h10,"Red Rose","40,000 EGP"));
+        items.add(new Items (R.mipmap.h11,"Hall ", "100,000"));
 
         ItemsAdapter Adapter = new ItemsAdapter(getActivity(),R.layout.list_item , items);
 

@@ -24,7 +24,6 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity android:name=".Services" />
-        <activity android:name=".Photographer"></activity>
     </application>
 
 </manifest>

@@ -44,7 +44,7 @@ public class FragmentAdapter extends FragmentPagerAdapter {
         else if (position==2)
             return "Suits";
         else if (position==3)
-            return "Phototgrapher";
+            return "Photographer";
         else
             return null;
     }
