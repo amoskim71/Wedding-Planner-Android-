@@ -39,7 +39,7 @@ public class ItemsAdapter extends ArrayAdapter<Items> {
 
         Items Currentitem=getItem(position);
 
-        Log.i("adapter",Currentitem.getImage()+"");
+
         ImageView imageView =  ListView.findViewById(R.id.image);
         imageView.setImageResource(Currentitem.getImage());
         TextView name = ListView.findViewById(R.id.name);

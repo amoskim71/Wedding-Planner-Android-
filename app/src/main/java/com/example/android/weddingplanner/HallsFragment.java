@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.TextView;
@@ -27,7 +28,7 @@ public class HallsFragment extends Fragment {
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.halls,container,false);
 
-        ArrayList<Items> items = new ArrayList<>();
+        final ArrayList<Items> items = new ArrayList<>();
         items.add(new Items (R.mipmap.h1,"Royal","50,000 EGP"));
         items.add(new Items (R.mipmap.h2,"Gold","45,000 EGP"));
         items.add(new Items (R.mipmap.h3,"Dream","45,000 EGP"));
@@ -44,6 +45,19 @@ public class HallsFragment extends Fragment {
 
         GridView HallsView = (GridView) root.findViewById(R.id.GridHalls);
         HallsView.setAdapter(Adapter);
+        final popupItem popupitem= new popupItem();
+        HallsView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Items currentItem = items.get(i);
+                popupitem.show(getFragmentManager(),null);
+                popupitem.setName(currentItem.getName());
+                popupitem.setPrice(currentItem.getPrice());
+                popupitem.setImage(currentItem.getImage());
+
+
+            }
+        });
 
 
         return  root;

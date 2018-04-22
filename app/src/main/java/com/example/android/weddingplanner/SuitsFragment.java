@@ -1,12 +1,16 @@
 package com.example.android.weddingplanner;
 
 
+import android.content.ClipData;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -25,9 +29,9 @@ public class SuitsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-       View root = inflater.inflate(R.layout.activity_suits,container,false);
+      View root = inflater.inflate(R.layout.activity_suits,container,false);
 
-        ArrayList<Items> items = new ArrayList<>();
+        final ArrayList<Items> items = new ArrayList<>();
         items.add(new Items (R.mipmap.d1,"wedding dress","50,000 EGP"));
         items.add(new Items (R.mipmap.d2,"wedding dress","45,000 EGP"));
         items.add(new Items (R.mipmap.d3,"wedding dress","45,000 EGP"));
@@ -53,13 +57,31 @@ public class SuitsFragment extends Fragment {
         items.add(new Items (R.mipmap.s11,"suit","6,500 EGP"));
         items.add(new Items (R.mipmap.s12,"suit","6,500 EGP"));
 
-        ItemsAdapter Adapter = new ItemsAdapter(getActivity(),R.layout.list_item , items);
+        final ItemsAdapter Adapter = new ItemsAdapter(getActivity(),R.layout.list_item , items);
+
+
 
         GridView SuitsView = (GridView) root.findViewById(R.id.GridSuits);
         SuitsView.setAdapter(Adapter);
+        final popupItem popupitem= new popupItem();
+        SuitsView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+    @Override
+    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+        Items currentItem = items.get(i);
+        popupitem.show(getFragmentManager(),null);
+        popupitem.setName(currentItem.getName());
+        popupitem.setPrice(currentItem.getPrice());
+        popupitem.setImage(currentItem.getImage());
+       
+
+    }
+});
+
+
 
        return  root;
 
     }
+
 
 }

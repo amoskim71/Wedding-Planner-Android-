@@ -19,5 +19,22 @@ public class Services extends AppCompatActivity {
         viewPager.setAdapter(pagerAdapter);
         TabLayout  tabLayout = (TabLayout)findViewById(R.id.tab);
         tabLayout.setupWithViewPager(viewPager);
+        Bundle bundle =getIntent().getExtras();
+switch (bundle.getInt("postion"))
+{
+        case 0:
+        viewPager.setCurrentItem(0);
+        break;
+    case 1:
+        viewPager.setCurrentItem(1);
+        break;
+    case 2:
+        viewPager.setCurrentItem(2);
+        break;
+    case 3:
+        viewPager.setCurrentItem(3);
+        break;
     }
+}
+
 }

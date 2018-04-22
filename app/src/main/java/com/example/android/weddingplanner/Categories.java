@@ -14,14 +14,29 @@ public class Categories extends AppCompatActivity {
     }
 
     public void openHalls(View view) {
-        startActivity(new Intent(this,Services.class));
+        Intent hallsIntent = new Intent(this,Services.class);
+        Bundle bundle = new Bundle();
+        bundle.putInt("postion",0);
+        hallsIntent.putExtras(bundle);
+        startActivity(hallsIntent);
+
     }
     public void openSuits(View view) {
 
-        startActivity(new Intent(this,Services.class));
+        Intent SuitsIntent = new Intent(this,Services.class);
+        Bundle bundle = new Bundle();
+        bundle.putInt("postion",2);
+        SuitsIntent.putExtras(bundle);
+        startActivity(SuitsIntent);
+
     }
-    public void openPhotographer(View view) {
-        startActivity(new Intent(this,Services.class));
+    public void openPhotographer(View view)
+    {
+        Intent PhotographerIntent = new Intent(this,Services.class);
+        Bundle bundle = new Bundle();
+        bundle.putInt("postion",3);
+        PhotographerIntent.putExtras(bundle);
+        startActivity(PhotographerIntent);
     }
 
 
