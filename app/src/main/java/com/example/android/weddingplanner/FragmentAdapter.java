@@ -5,6 +5,11 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.example.android.weddingplanner.Services.BeautyFragment;
+import com.example.android.weddingplanner.Services.HallsFragment;
+import com.example.android.weddingplanner.Services.PhotographerFragment;
+import com.example.android.weddingplanner.Services.SuitsFragment;
+
 /**
  * Created by Elesdody on 04-Apr-18.
  */
@@ -35,17 +40,5 @@ public class FragmentAdapter extends FragmentPagerAdapter {
         return 4;
     }
 
-    @Override
-    public CharSequence getPageTitle(int position) {
-        if (position ==0)
-            return "Halls";
-        else if (position==1)
-            return "Beatuy";
-        else if (position==2)
-            return "Suits";
-        else if (position==3)
-            return "Photographer";
-        else
-            return null;
-    }
+
 }

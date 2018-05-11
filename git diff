@@ -1,0 +1,50 @@
+[33mcommit 2fc33ff263d2004eaa905b1544f72f5cf83f1b96[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Ahmed Elesdody <37310898+elesdody5@users.noreply.github.com>
+Date:   Mon Apr 23 00:47:31 2018 +0200
+
+    Adding beauty
+
+[33mcommit 188b2154fb32601190c0b3a286b24c3dcb28a930[m
+Author: Ahmed Elesdody <37310898+elesdody5@users.noreply.github.com>
+Date:   Sun Apr 15 19:08:42 2018 +0200
+
+    add items
+
+[33mcommit 2fc53e16f313f68a626b11507db4d442bbbef83b[m
+Merge: 46fb167 55567ba
+Author: khadija-emam <37833649+khadija-emam@users.noreply.github.com>
+Date:   Wed Apr 11 00:01:42 2018 +0200
+
+    Merge pull request #2 from elesdody5/Khadija_emam
+    
+    create suits and photography fragment
+
+[33mcommit 55567ba9e3a90d5d8f92296359d594e98aea29a0[m[33m ([m[1;31morigin/Khadija_emam[m[33m, [m[1;32mKhadija_emam[m[33m)[m
+Author: khadija-emam <37833649+khadija-emam@users.noreply.github.com>
+Date:   Tue Apr 10 23:52:21 2018 +0200
+
+    create suits and photography fragment
+
+[33mcommit 46fb167f48f9f5871b06c33ed51327cf0739167b[m[33m ([m[1;31morigin/createFragment[m[33m, [m[1;32mAhmed-Elesdody[m[33m)[m
+Merge: 3fd7f5c e3e3f4c
+Author: elesdody5 <37310898+elesdody5@users.noreply.github.com>
+Date:   Mon Apr 9 16:17:31 2018 +0200
+
+    Merge pull request #1 from elesdody5/createFragment
+    
+    Create Fragment
+
+[33mcommit e3e3f4cda8c9de2055d511b7ab9b380262a518c4[m
+Author: Ahmed Elesdody <37310898+elesdody5@users.noreply.github.com>
+Date:   Mon Apr 9 16:16:06 2018 +0200
+
+    Create Fragment
+
+[33mcommit 3fd7f5cf11acd2a3318d93671b9dc37b27fb9f46[m
+Author: Elesdody <35653562+Elesdody@users.noreply.github.com>
+Date:   Tue Mar 27 17:25:46 2018 +0200
+
+    firstStep
+    
+    create main Activity
+    and category Activity

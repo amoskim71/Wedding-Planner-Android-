@@ -1,6 +1,8 @@
 package com.example.android.weddingplanner;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.RecyclerView;
@@ -14,6 +16,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+
+import com.bumptech.glide.Glide;
 
 import java.util.List;
 
@@ -41,12 +45,16 @@ public class ItemsAdapter extends ArrayAdapter<Items> {
 
 
         ImageView imageView =  ListView.findViewById(R.id.image);
-        imageView.setImageResource(Currentitem.getImage());
-        TextView name = ListView.findViewById(R.id.name);
-        TextView price =  ListView.findViewById(R.id.price);
+        Glide.with(imageView.getContext())
+                .load(Currentitem.getImage_Url())
+                .asBitmap()
+                .into(imageView);
 
+        TextView name = ListView.findViewById(R.id.name);
+
+        if(Currentitem.getName()!=null)
         name.setText(Currentitem.getName());
-        price.setText(Currentitem.getPrice());
+
 
 return ListView;
     }
